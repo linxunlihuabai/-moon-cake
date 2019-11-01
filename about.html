@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>麦轩月饼</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/gird_flex.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+  <!-- 字体图标库 -->
+  <svg style="display:none;">
+    <symbol viewBox="0 0 1024 1024" id="search">
+      <path
+        d="M621.664 653.664c-44.48 31.68-98.88 50.336-157.664 50.336-150.208 0-272-121.792-272-272s121.792-272 272-272c150.208 0 272 121.792 272 272 0 75.104-30.432 143.104-79.68 192.32l191.904 191.904c8.8 8.8 8.576 22.912-0.256 31.744-8.896 8.896-23.04 8.96-31.744 0.256l-194.592-194.592zM464 672c132.544 0 240-107.456 240-240s-107.456-240-240-240c-132.544 0-240 107.456-240 240s107.456 240 240 240l0 0z">
+      </path>
+    </symbol>
+    <symbol viewBox="0 0 1024 1024" id="user">
+      <path
+        d="M770.858667 576.597333c-9.258667-7.253333-22.442667-5.418667-29.525334 4.096s-5.333333 22.997333 3.925334 30.250667c90.538667 70.912 144.725333 176.256 150.698666 291.669333H128.085333C139.050667 695.466667 307.029333 530.261333 512 530.261333c117.845333 0 213.674667-98.176 213.674667-218.922666 0-120.661333-95.829333-218.922667-213.674667-218.922667-117.802667 0-213.632 98.261333-213.632 218.922667a218.88 218.88 0 0 0 108.885333 189.568C222.592 548.992 85.333333 720.256 85.333333 924.16v21.589333h853.333334v-21.589333c0-137.344-61.184-263.978667-167.808-347.562667zM340.48 311.338667c0-96.896 76.970667-175.744 171.52-175.744 94.592 0 171.562667 78.848 171.562667 175.744S606.592 487.082667 512 487.082667c-94.549333 0-171.52-78.848-171.52-175.744z">
+      </path>
+    </symbol>
+    <symbol viewBox="0 0 1025 1024" id="cart">
+      <path
+        d="M790.439 661.909h-394.194c-37.37 0-46.666-20.51-48.927-32.763l-3.911-21.551c-40.409-226.818-63.44-352.916-68.567-374.815-4.432-17.381-11.819-23.638-17.12-23.638h-77.952c-8.516 0-15.382-6.953-15.382-15.469s6.865-15.381 15.382-15.381h77.952c8.168 0 35.804 3.389 47.102 47.102 7.995 34.066 53.88 291.997 69.001 376.727l3.824 21.465c0.348 1.998 1.39 7.474 18.597 7.474h394.282c8.516 0 15.382 6.865 15.382 15.382 0 8.603-6.953 15.469-15.469 15.469v0zM745.511 537.116h-398.453c-8.516 0-15.382-6.865-15.382-15.382s6.865-15.382 15.382-15.382h398.366c27.461 0 33.023-21.378 33.197-22.335 1.651-6.17 38.845-144.868 49.013-179.37 1.217-4.085 2.172-9.56 0-12.948-2.259-3.476-7.647-5.041-10.168-5.562h-519.335c-8.516 0-15.382-6.865-15.382-15.382s6.865-15.382 15.382-15.382h520.64c0.521 0 1.043 0 1.651 0.087 2.259 0.261 22.073 2.781 33.023 19.118 4.867 7.299 9.56 19.988 3.998 38.932-10.168 34.153-48.319 176.761-48.753 178.239-3.91 15.381-22.073 45.364-63.178 45.364v0zM428.052 832.414c-35.283 0-64.048-28.679-64.048-64.048s28.765-64.048 64.048-64.048c35.283 0 63.961 28.679 63.961 64.048s-28.679 64.048-63.961 64.048v0zM428.052 735.255c-18.337 0-33.197 14.86-33.197 33.197s14.86 33.197 33.197 33.197c18.249 0 33.11-14.861 33.11-33.197s-14.86-33.197-33.11-33.197v0zM715.442 832.414c-35.283 0-64.047-28.679-64.047-64.048s28.765-64.048 64.047-64.048c35.283 0 64.048 28.679 64.048 64.048s-28.765 64.048-64.048 64.048v0zM715.442 735.255c-18.249 0-33.197 14.86-33.197 33.197s14.861 33.197 33.197 33.197c18.249 0 33.197-14.861 33.197-33.197s-14.947-33.197-33.197-33.197v0zM715.442 735.255z">
+      </path>
+    </symbol>
+  </svg>
+  <!-- header start -->
+  <header class="header">
+    <div class="wrap">
+      <div class="menu">
+        <i class="icon icon-align-justify"></i>
+      </div>
+      <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+      <div class="mobile-bg"></div>
+      <div class="icon-svg">
+        <svg style="width:28px;height:28px;font-size:14px;;position:relative;top:4px;" class="svg-search">
+          <use xlink:href="#search" fill="#080808" />
+        </svg>
+        <svg class="svg-user">
+          <use xlink:href="#user" />
+        </svg>
+        <div class="shop">
+          <svg class="svg-cart">
+            <use xlink:href="#cart" />
+          </svg>
+          <div class="cart">
+            <div class="cart-goods">
+              购物车里没有商品
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="login">
+          <a href="#">登录</a>
+          <a href="#">注册</a>
+        </div>
+        <div class="sear-goods">
+          <div class="sear">
+            <input type="text" placeholder="请输入商品名称">
+            <a href="#" class="icon icon-search"></a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">首页<i class="underline"></i></a></li>
+          <li class="active"><a href="about.html">关于<i class="underline"></i></a></li>
+          <li><a href="market.html">商城<i class="underline"></i></a></li>
+          <li><a href="#">联系<i class="underline"></i></a></li>
+        </ul>
+
+      </div>
+      <a href="#" class="icon icon-search last-search"></a>
+    </div>
+  </header>
+  <!-- header end -->
+  
+  <!-- banner start -->
+  <div class="banner">
+    <img src="images/banner1.jpg" alt="">
+  </div>
+  <!-- banner end -->
+
+  <!-- technology start -->
+  <div class="technology">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="head">
+            <h2>麦轩工艺</h2>
+          </div>
+          <div class="main">
+            <p>深圳市麦轩食品有限公司、地处于经济繁荣、交通便利的深圳市宝安区松岗潭头西部工业区，毗邻港澳，创建于1993年，从一家饼店开始经营，发展至今，拥有16000平方米现代化厂房、3000平方米员工宿舍楼；拥有一支开拓创新、勤奋敬业的优秀团队，其中各类中高级管理、市场营销、专业技术人员100余人（含外聘专家顾问）；公司在秉承香港麦轩饼家“一丝不苟、日臻完美”传统工艺理念的基础上，与时俱进，不断创新，严格按ISO9001和HACCP质量管理体系，控制供应链和生产的每一个环节，保证产品质量的稳定和持续改进；是一家集设计、研发、生产、销售、服务于一体的食品企业；主要产品有：中式传统饼点（主导产品有老婆饼、合桃酥、鸡仔饼）、月饼系列（广式月饼、港式月饼、台式酥饼、异国风情月饼）和年货系列（油炸类糕点、烘烤类糕点、曲奇饼干）等至臻至美饼点系列。</p>
+
+            <div class="bg">
+              <span>
+                  香港元朗，因盛产传统饼点而闻名遐迩。麦轩饼家总店位于元朗五合街，始创于1932年，因所制家传招牌老婆饼而名响一方。麦轩饼家传人庄氏，聪颖好学，不以家传为足，游学四方，尝天下美点，访岭南名师，融会贯通，不断精进烘焙之法，遂创“麦轩”品牌，终以“擅选料、勤管理、巧加工、重品相”而自成一派，传承百年。
+              </span>
+            </div>
+            <p>
+              【用心做好饼】
+              <br>
+              月饼之于麦轩，不仅是百年经典工艺的完美传承，更是心礼意诚的极致融合。百年麦轩，饼中臻品，烘焙工艺，世代相传，百年不变。这融合最佳原产地材料的麦轩月饼，经由行家遵循严谨细致的焙烘技艺，始终不变的是百年的荣耀光辉和始终如一的传世美味。用心做好饼，心诚饼则香，麦轩人，用心使每一块月饼在历练中得以完美呈现。
+              <br>
+              【精品是麦轩的唯一原则】
+              <br>
+              一丝不苟的完美演绎，精益求精的坚定信念，历经100多年的磨练，麦轩老婆饼、合桃酥、鸡仔饼已成为传统饼点中不可多得的至尊精品。在每一个承载记忆的日子里，享受大师级的味觉和视觉的双重礼遇，与麦轩一起收获愉情悦意的心情。
+            </p>
+          </div>
+
+
+          <div class="foot">
+            <img src="images/background3.jpg" alt="">
+            <p>
+                从优秀到卓越，华美人将一如既往，以”引领食品行业潮流，缔造国际健康品牌”为愿景，以”创造时尚美味，体验快乐生活”为使命，努力打造FoEs友爱企业，向广大消费者奉献安全、健康、美味的食品为己任，锐意进取，不断创新。
+                <span>创造时尚美味，体验快乐生活</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- technology end -->
+
+
+  <!-- footer start -->
+
+  <div class="footer">
+    <div class="contact">
+      <div class="container container-contact">
+        <div class="row">
+          <div class="contact-head">
+            <h2>联系</h2>
+            <p>Contact</p>
+          </div>
+          <div class="contact-type">
+            <h3>关注我们</h3>
+            <span class="wechat">
+              <a href="#"><img src="images/wechat1.jpg" alt=""></a>
+            </span>
+            <span class="qq"></span>
+          </div>
+          <div class="col-md-3 contact-addr">
+            <h3>深圳市麦轩食品有限公司</h3>
+            <span>地址：深圳市宝安区松岗街道潭头西部工业区52-53栋 </span>
+            <span>电话：13715349101</span>
+          </div>
+          <div class=" col-md-4 contact-wechat">
+            <img src="images/wechat.jpg" alt="">
+            <p>微信</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="copyright">
+      <p>Copyright @ 2018 <a href="#">深圳麦轩月饼</a> 版权所有</p>
+    </div>
+
+  </div>
+
+  <!-- footer end -->
+
+
+  <!-- aside start -->
+  <div class="aside">
+    <ul>
+      <li><a href="#" class="tel"></a></li>
+      <li><a href="#" class="qq"></a></li>
+      <li class="weixin"><a href="#" class="wechat">
+          <div class="pic">
+            <img src="images/wechat1.jpg" alt="">
+            <p>微信咨询</p>
+          </div>
+
+        </a></li>
+      <li><a href="#" class="top"></a></li>
+    </ul>
+  </div>
+
+  <div class="back-top">
+  </div>
+
+
+  <div class="bottom-aside">
+    <a href="#">客服电话</a>
+    <a href="#">商城中心</a>
+  </div>
+
+
+
+  <!-- aside end -->
+
+  <script src="js/jquery1.10.2.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/mine.js"></script>
+</body>
+
+</html>

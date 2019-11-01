@@ -1,0 +1,162 @@
+.moon-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 0 40px;
+  height: 86px;;
+}
+.moon-title h1{
+  font-weight: normal;
+  font-size: 2.4rem;
+  color: #333;
+}
+.moon-title ul{
+  display: flex;
+  list-style: none;
+}
+.moon-title li{
+  width: 60px;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+.moon-title li a{
+  padding: 10px 0;
+  display: block;
+  color: #878787;
+}
+.moon-title li:hover{
+  border-bottom: 1px solid #90af6b
+}
+.moon-title li:hover a{
+  color: #90af6b;
+}
+
+.goods{
+  padding-top: 20px;
+  background-color: #fff;
+
+}
+.goods .title {
+  margin-bottom: 40px;
+}
+.goods .title h2{
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.goods .info{
+  text-align: left;
+  margin-bottom: 35px;
+}
+.goods .info p{
+  margin-bottom: 5px;
+  color: #8e8e8e;
+}
+.goods .more-goods{
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  color: #d8d8d8;
+  font-size: 1.3rem;
+}
+.goods .info:hover img{
+  transform: scale(1);
+}
+.goods .info:hover .more-goods{
+  border-color: #90af6b;
+  color: #90af6b;
+}
+
+.goods .page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 170px;
+}
+
+.goods .page ul{
+  display: flex;
+  list-style: none;
+
+}
+.goods .page li{
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  margin-right: 5px;
+}
+.goods .page li.active{
+  background-color: #fff;
+}
+
+.goods .page li a{
+  display: block;
+  line-height: 1em;
+  padding: 5px 10px;
+  color: #90af6b;
+}
+.goods .title h2.md-h2{
+  display: none;
+}
+.goods .title .text-hidden{
+  display: none;
+}
+.goods .title h2 span{
+  font-weight: normal;
+}
+
+
+
+
+@media screen and (max-width:992px){
+  .moon-title h1{
+    display: none;
+  }
+  .moon-title{
+    justify-content: flex-end;
+  }
+  .goods .info{
+    text-align: center;
+  }
+  .goods .info p,
+  .goods .info .goods-name,
+  .goods .info .mogoods{
+    text-align: left;
+  }
+  .goods .page {
+    display: none;
+  }
+  /* .goods .title h2.md-h2{
+    display: block;
+  } */
+
+  
+}
+
+
+@media screen and (min-width:768px){
+  .goods .title h2{
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+@media screen and (min-width:992px){
+  .goods .container{
+    width: 100%;
+    max-width: 1920px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+  .goods .title h2{
+    font-size: 3rem;
+
+  }
+  .goods .title {
+    margin-bottom: 55px;
+  }
+}
